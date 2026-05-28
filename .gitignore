@@ -1,2 +1,4 @@
 Fake.csv
 True.csv
+fake_news_model.pkl
+vectorizer.pkl
