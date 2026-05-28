@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 streamlit
 scikit-learn
 pandas
 numpy
+=======
+streamlit
+scikit-learn
+pandas
+numpy
+>>>>>>> 033fe4dde994189bf18fbbe7d9a8343c41632ff1
 pickle-mixin

@@ -8,14 +8,19 @@ vectorizer = pickle.load(open("vectorizer.pkl", "rb"))
 # Title
 st.title("Fake News Detection App")
 
-# User Input
+# Input box
 news = st.text_area("Enter News Text")
 
-# Prediction
+# Button
 if st.button("Check News"):
-    transformed_news = vectorizer.transform([news])
-    prediction = model.predict(transformed_news)
 
+    # Transform text
+    news_vector = vectorizer.transform([news])
+
+    # Prediction
+    prediction = model.predict(news_vector)
+
+    # Result
     if prediction[0] == 0:
         st.error("Fake News")
     else:
